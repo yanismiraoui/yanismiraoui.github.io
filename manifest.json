@@ -1,5 +1,10 @@
 {
- "name": "App",
+ "name": "Yanis Miraoui | Portfolio",
+ "short_name": "Yanis Miraoui",
+ "start_url": "/#/home",
+ "display": "standalone",
+ "background_color": "#1d1d1d",
+ "theme_color": "#1d1d1d",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
