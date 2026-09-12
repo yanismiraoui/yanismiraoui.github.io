@@ -1,0 +1,79 @@
+{
+  "featured": [
+    {
+      "name": "BenchLeader",
+      "url": "https://www.benchleader.com/",
+      "description": "Compare AI models across published benchmarks, speed, latency, and cost in one leaderboard.",
+      "category": "AI model intelligence"
+    },
+    {
+      "name": "PennyOCR",
+      "url": "https://pennyocr.com/",
+      "description": "Turn PDFs and images into text and Markdown with an OCR API built for developers and AI agents.",
+      "category": "Document AI"
+    },
+    {
+      "name": "Tensorlight",
+      "url": "https://tensorlight.dev/",
+      "description": "Explore AI GPUs, memory, and inference through interactive 3D models and visual explanations.",
+      "category": "Interactive GPU field guide"
+    },
+    {
+      "name": "PaperKit",
+      "url": "https://www.trypaperkit.com/",
+      "description": "Merge, split, crop, sign, and convert PDFs with tools that process documents locally in your browser.",
+      "category": "Private PDF tools"
+    },
+    {
+      "name": "Idiomesh",
+      "url": "https://idiomesh.vercel.app/studio",
+      "description": "Generate native Python and TypeScript SDKs from OpenAPI. Try the live compiler; hosted automation is in private beta.",
+      "category": "API developer tools",
+      "status": "Live demo"
+    },
+    {
+      "name": "GitShine",
+      "url": "https://gitshine.com/",
+      "description": "Schedule GitHub commits, customize their messages and cadence, and discover projects through the community.",
+      "category": "GitHub automation"
+    },
+    {
+      "name": "Unmark",
+      "url": "https://unmark.dev/",
+      "description": "Clean hidden Unicode characters from text and rewrite AI-generated prose with adjustable strength.",
+      "category": "Text cleanup and rewriting"
+    },
+    {
+      "name": "OPT Pulse",
+      "url": "https://stem-opt-pulse.vercel.app/",
+      "description": "Explore community-reported OPT and STEM OPT timelines, compare similar cases, and estimate processing windows.",
+      "category": "Community timeline dashboard"
+    }
+  ],
+  "upcoming": [
+    {
+      "name": "Hourra!",
+      "url": "https://hourra-chi.vercel.app/",
+      "description": "Bring wearable data together to explore sleep, recovery, activity, and longer-term health trends.",
+      "category": "Wearable insights"
+    },
+    {
+      "name": "Voiceflint",
+      "url": "https://voiceflint.com/",
+      "description": "Build voice agents for phone and web with flexible model choices and clear call costs and latency.",
+      "category": "AI voice agents"
+    },
+    {
+      "name": "Everscene",
+      "url": "https://everscene.app/",
+      "description": "Turn Apple TV into an ambient display, with an iPhone companion for creating and sharing AI scenes.",
+      "category": "Ambient scenes for Apple TV"
+    },
+    {
+      "name": "Zapline",
+      "url": "https://zapline.app/",
+      "description": "A native IPTV player for your own playlists on iPhone, iPad, Mac, and Apple TV, with a program guide and catch-up playback.",
+      "category": "Native Apple media player"
+    }
+  ]
+}

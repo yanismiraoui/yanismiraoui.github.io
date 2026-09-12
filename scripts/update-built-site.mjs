@@ -338,3 +338,6 @@ fs.writeFileSync(cssPath, css);
 fs.writeFileSync(indexPath, index);
 fs.writeFileSync(manifestPath, manifest);
 fs.writeFileSync(assetManifestPath, assetManifest);
+
+// Preserve the maintained product catalog whenever the built site is refreshed.
+await import("./update-projects.mjs");
