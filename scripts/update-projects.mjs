@@ -17,8 +17,8 @@ for (const group of [projects.featured, projects.upcoming]) {
     if (!project.description || !project.category) throw new Error("Incomplete project card");
   }
 }
-if (projects.featured.length !== 8 || projects.upcoming.length !== 4) {
-  throw new Error("Expected eight featured projects and four coming soon");
+if (!Array.isArray(projects.featured) || !Array.isArray(projects.upcoming)) {
+  throw new Error("Expected featured and upcoming arrays");
 }
 
 function replaceExactlyOnce(text, before, after) {
@@ -34,7 +34,7 @@ function portfolioProjectSections(theme) {
   return [
     { id: "featured-products", title: "Featured projects", projects: portfolioProjectCatalog.featured, upcoming: false },
     { id: "coming-soon", title: "Coming soon", projects: portfolioProjectCatalog.upcoming, upcoming: true }
-  ].map(function(section) {
+  ].filter(function(section) { return section.projects && section.projects.length > 0; }).map(function(section) {
     return (0,Ni.jsxs)("section", {
       className: "portfolio-showcase", "aria-labelledby": section.id,
       children: [
@@ -96,10 +96,10 @@ let index = read("index.html");
 for (const asset of ["js/main.2302ccec.js", "css/main.a2817135.css"]) {
   const pattern = new RegExp("/static/"+asset.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"(?:\\?v=[^\"]+)?", "g");
   if ([...index.matchAll(pattern)].length !== 1) throw new Error(`Expected one asset reference: ${asset}`);
-  index = index.replace(pattern, () => `/static/${asset}?v=20260912-projects`);
+  index = index.replace(pattern, () => `/static/${asset}?v=20261019-no-products`);
 }
 
 write("static/js/main.2302ccec.js",bundle);
 write("static/css/main.a2817135.css",css);
 write("index.html",index);
-console.log("Updated eight featured projects and four coming-soon projects.");
+console.log(`Updated project showcase: ${projects.featured.length} featured, ${projects.upcoming.length} coming soon.`);
